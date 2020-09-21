@@ -16,7 +16,7 @@
         android:layout_marginTop="64dp"
         android:text="@string/qual_o_valor_em_euros"
         android:textColor="@color/colorAccent"
-        android:textSize="30sp" />
+        android:textSize="33sp" />
 
     <EditText
         android:id="@+id/edit_valor"
