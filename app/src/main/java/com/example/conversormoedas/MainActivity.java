@@ -1,7 +1,5 @@
 package com.example.conversormoedas;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
@@ -10,11 +8,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ViewHolder mViewHolder = new ViewHolder();
 
-    private static class ViewHolder{
+    private static class ViewHolder {
         EditText edit_valor;
         TextView text_dollar;
         TextView text_real;
@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @SuppressLint(value = "DefaultLocale")
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.button_converter){
+        if (v.getId() == R.id.button_converter) {
             String valor = this.mViewHolder.edit_valor.getText().toString();
-            if ("".equals(valor)){
+            if ("".equals(valor)) {
                 // Mensagem de erro para o utilizador
                 Toast.makeText(this, R.string.informe_valor, Toast.LENGTH_LONG).show();
             } else {
